@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './CicloDeVidaComponente.css';
 
 class CicloDeVidaComponente extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class CicloDeVidaComponente extends Component {
   render() {
     console.log('render');
     return (
-      <div>
+      <div class="main">
         <h1>Ciclo de Vida do Componente</h1>
         <p>Contador: {this.state.contador}</p>
         <button onClick={this.handleClick}>Incrementar</button>
