@@ -25,11 +25,22 @@ class CicloDeVidaComponente extends Component {
   render() {
     console.log('render');
     return (
-      <div class="main">
-        <h1>Ciclo de Vida do Componente</h1>
-        <p>Contador: {this.state.contador}</p>
-        <button onClick={this.handleClick}>Incrementar</button>
-      </div>
+      <>
+        <div class="main">
+          <h1>Ciclo de Vida do Componente</h1>
+          <p>Contador: {this.state.contador}</p>
+          <button onClick={this.handleClick}>Incrementar</button>
+        </div>
+
+        <div>
+          <h2>Console</h2>
+          <div class="console">
+            <p>Abra o console do navegador para ver as mensagens.</p>
+
+            <p>Atualize o componente clicando no botão "Incrementar".</p>
+          </div>
+        </div>
+      </>
     );
   }
 }
